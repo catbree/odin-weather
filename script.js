@@ -21,7 +21,7 @@ const weatherFocus = new Weather();
 
 async function fetchForecastWeather() {
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${selectedCity}&days=3`, {mode: 'cors'});
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${selectedCity}&days=3`, {mode: 'cors'});
         const weatherData = await response.json();
         
         console.log(weatherData);
