@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="userControls">
+        <input class="searchBar" type="text" placeholder="Search a city">
+        <button class="searchBtn"><img src="assets/search.png"></button>
+    </div>
+    
+    <div class="cityInfoContainer">
+        <div class="city"></div>
+        <div class="localTime"></div>
+    </div>
+    <div class="conditionContainer">
+        <img class="conditionIcon iconBig" src="#">
+        <div class="conditionText"></div>
+    </div>
+    <div class="supportInfoContainer">
+        <div class="supportInfoList">
+            <div class="supportInfo">
+                <img src="assets/raindrop.svg" class="iconSmall pptIcon">
+                <text><span class="ppt"></span> mm</text>
+            </div>
+            <div class="supportInfo">
+                <img src="assets/clear-day.svg" class="iconSmall uvIcon" style="width:20px; padding:0px 4px;">
+                <text><span class="uvIndex"></span></text>
+            </div>
+        </div>
+        <div class="temperatureContainer"><span class="temperature"></span>°</div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
